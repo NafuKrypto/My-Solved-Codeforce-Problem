@@ -1,0 +1,28 @@
+#include <iostream>
+#include<conio.h>
+using namespace std;
+ 
+int main()
+{
+   long long int n,m,a,r1,r2;
+    cin>>n>>m>>a;
+    //length
+    if(n%a==0){
+        r1=(n/a);
+    }//1000000000 1000000000 1//-1486618624
+ 
+    else if(n%a!=0){
+        r1=(n/a)+1;
+    }
+    //breadth
+     if(m%a==0){
+        r2=(m/a);
+    }
+    else if(m%a!=0){
+        r2=(m/a)+1;
+    }
+long long int r=r1*r2;
+    cout<<r<<endl ;
+//cout<<(1000000000*1000000000);
+    return 0;
+}
